@@ -1,0 +1,45 @@
+@import 'styles/helpers/variables.scss';
+
+
+.checkbox {
+  max-width: 198px;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 20px;
+  height: 20px;
+  background-color: $color-grey-default;
+  border-radius: 5px;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  appearance: none;
+
+  &:hover {
+    background: $color-cobalt-10;
+    background-image: url('../../../assets/images/icons/check.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid $color-cobalt-10;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+  }
+
+  &:checked {
+    background: $color-cobalt;
+    background-image: url('../../../assets/images/icons/check.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid $color-cobalt;
+    position: relative;
+    transition: all 0.2s ease-in;
+  }
+}
+
+.label {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 10px;
+}

@@ -1,0 +1,53 @@
+@import 'styles/helpers/variables';
+
+.map {
+  position: relative;
+  background: url('../../assets/images/background.png'), linear-gradient(360deg, #7e6af3 15.95%, #6540cd 63.1%);
+  z-index: 1;
+  padding-top: 75px;
+}
+
+.content {
+  width: 390px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-white;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 23px;
+  text-align: center;
+}
+
+.button {
+  height: 37px;
+  background: $color-white;
+  border-radius: 19px;
+  padding: 10px 18px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-black;
+
+  & svg {
+    margin-right: 11px;
+  }
+
+  &:hover {
+    color: $color-yellow-hover;
+  }
+}

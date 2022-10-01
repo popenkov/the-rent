@@ -1,0 +1,13 @@
+.footer-nav {
+  padding-left: 70px;
+
+  &__link {
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-grey-font;
+  }
+
+  &__item {
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,386 @@
+@import 'styles/helpers/variables';
+
+.card {
+  width: 406px;
+  height: 522px;
+  box-shadow: 0 20px 40px rgb(135 124 202 / 15%);
+  background: $color-background-white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.img {
+  width: 406px;
+  height: 226px;
+  background: #e4e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+
+  & > div:first-child {
+    height: 226px !important;
+  }
+
+  & img {
+    object-fit: contain;
+    max-width: 100%;
+  }
+}
+
+.status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 37px;
+  background: $color-yellow-gradient;
+  border-radius: 0 10px 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-white;
+  text-shadow: 0 1px 0 rgb(147 79 0 / 30%);
+  padding: 7px 12px;
+  z-index: 1;
+}
+
+.container {
+  padding: 20px 20px 12px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-cobalt;
+  padding-right: 5px;
+}
+
+.day {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-grey-light;
+}
+
+.tags {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  height: 34px;
+  background: $color-grey-default;
+  border-radius: 18px;
+  padding: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-grey-dark;
+  margin-left: 7px;
+}
+
+.user {
+  margin-right: 6px;
+}
+
+.address {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 11px;
+  margin-bottom: 21px;
+
+  &:first-child {
+    & svg {
+      margin-right: 10px;
+    }
+  }
+
+  & svg {
+    margin-right: 6px;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 19px;
+  color: $color-total-black;
+  font-style: normal;
+  white-space: nowrap;
+
+  &:first-child {
+    grid-column: 1 / 4;
+  }
+}
+
+.description {
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 15px;
+  color: $color-grey-font;
+  margin-bottom: 13px;
+}
+
+.footer {
+  padding-top: 14px;
+  border-top: 1px solid $color-cobalt-10;
+  display: flex;
+  justify-content: space-between;
+}
+
+.owner {
+  position: absolute;
+  bottom: 75px;
+  right: 185px;
+  z-index: 2;
+}
+
+.like {
+  width: 33px;
+  height: 33px;
+  background: rgba(235, 87, 87, 0.1);
+  border-radius: 22px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    width: 15px;
+    height: 13px;
+    content: '';
+    background-color: #eb5757;
+    mask-image: url('../../assets/images/icons/heart2-default.png');
+    mask-size: 15px 13px;
+    background-repeat: no-repeat;
+    top: calc(50% - 7px);
+    right: calc(50% - 7.5px);
+  }
+
+  &:hover {
+    &::after {
+      mask-image: url('../../assets/images/icons/heart2-hover.png');
+    }
+  }
+}
+
+.likeActive {
+  &::after {
+    mask-image: url('../../assets/images/icons/heart2-active.png');
+  }
+
+  &:hover {
+    &::after {
+      mask-image: url('../../assets/images/icons/heart2-active.png');
+    }
+  }
+}
+
+.cardTile {
+  width: 1280px;
+  height: 300px;
+  display: flex;
+
+  & .img {
+    width: 538px;
+    height: 300px;
+    flex-shrink: 0;
+
+    & > div:first-child {
+      height: 300px !important;
+    }
+
+    & img {
+      object-fit: contain;
+      max-width: 100%;
+    }
+  }
+
+  .container {
+    padding: 20px 25px 25px;
+  }
+
+  .status {
+    top: 0;
+    left: 473px;
+    right: auto;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .price {
+    font-size: 25px;
+    line-height: 30px;
+    padding-right: 0;
+    text-align: right;
+  }
+
+  .day {
+    color: #7a7f86;
+  }
+
+  .info {
+    margin-bottom: 0;
+  }
+
+  .address {
+    display: block;
+    margin-bottom: 17px;
+  }
+
+  .tags {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 14px;
+  }
+
+  .tag {
+    margin-left: 0;
+    margin-right: 15px;
+    padding: 7px 14px 7px;
+
+    & svg {
+      margin-right: 6px;
+    }
+
+    & span {
+      color: $color-cobalt;
+    }
+  }
+
+  .description {
+    -webkit-line-clamp: 3;
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .owner {
+    bottom: 92px;
+    right: 605px;
+  }
+
+  .footer {
+    padding-top: 0;
+    border-top: none;
+    justify-content: flex-start;
+
+    & button:first-child {
+      margin-right: 16px;
+    }
+
+    & button:last-child {
+      margin-left: auto;
+    }
+  }
+}
+
+.buttonPhone {
+  background: $color-background-white;
+  box-shadow: 0 5px 20px rgb(0 96 206 / 10%);
+  border-radius: 18px;
+  padding: 10px 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-cobalt;
+
+  & svg {
+    fill: $color-cobalt;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background: #f5f3ff;
+  }
+
+  &:active {
+    background: $color-background-white;
+  }
+}
+
+.buttonLiked {
+  background: $color-red-10;
+  border-radius: 22px;
+  font-weight: 600;
+  color: $color-red;
+  padding: 9px 40px 9px 15px;
+  text-shadow: none;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    width: 15px;
+    height: 13px;
+    content: '';
+    background-color: $color-red;
+    mask-image: url('../../assets/images/icons/heart2-default.png');
+    mask-size: 15px 13px;
+    background-repeat: no-repeat;
+    top: calc(50% - 7px);
+    right: 15px;
+  }
+
+  &:hover {
+    &::after {
+      transition: mask-image 0.2s ease-in;
+      mask-image: url('../../assets/images/icons/heart2-hover.png');
+    }
+  }
+}
+
+.buttonLikedActive {
+  &::after {
+    transition: mask-image 0.2s ease-in;
+    mask-image: url('../../assets/images/icons/heart2-active.png');
+  }
+
+  &:hover {
+    &::after {
+      transition: mask-image 0.2s ease-in;
+      mask-image: url('../../assets/images/icons/heart2-active.png');
+    }
+  }
+}
+
+.buttonMore {
+  background: $color-yellow-10;
+  padding: 10px 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 17px;
+  color: $color-yellow-hover;
+  text-shadow: none;
+
+  &:hover {
+    background: $color-yellow-20;
+  }
+
+  &:active {
+    background: $color-yellow-10;
+  }
+}

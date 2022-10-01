@@ -1,0 +1,115 @@
+@import 'styles/helpers/variables';
+
+.rent {
+  position: relative;
+  padding-bottom: 90px;
+}
+
+.subTitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  background: $color-violet-gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-total-black;
+  margin-bottom: 60px;
+}
+
+.filter {
+  position: absolute;
+  content: '';
+  top: -30px;
+  right: -128px;
+}
+
+.offers {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+
+.count {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73px;
+  color: $color-black;
+
+  & span {
+    color: $color-cobalt;
+  }
+}
+
+.description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-grey-font;
+  opacity: 0.6;
+}
+
+.buttonWrapper {
+  align-self: center;
+  height: 70px;
+  padding-left: 25px;
+  border-left: 1px solid $color-violet-gradient;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 70px;
+    background: $color-violet-gradient;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+  }
+}
+
+.button {
+    background: $color-violet-gradient;
+    box-shadow: 0 15px 40px rgb(0 96 206 / 15%);
+    border-radius: 17px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-white;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+
+    &:hover {
+      background: $color-violet-gradient-hover;
+    }
+
+    &:active {
+      background: $color-violet-gradient;
+    }
+
+    & svg {
+      margin-left: 12px;
+      stroke: $color-white;
+    }
+}
+
+.apartments {
+  margin-bottom: 38px;
+}
+
+.navigation {
+  display: flex;
+  width: 92px;
+  justify-content: space-between;
+  margin: 0 auto 32px;
+}

@@ -1,0 +1,79 @@
+@import 'styles/helpers/variables';
+
+.error {
+  background: url('../../../assets/images/background.png') no-repeat 0% / cover,
+    linear-gradient(0deg, #7e6af3 1.04%, #6540cd 100%);
+  min-height: 559px;
+}
+
+.container {
+  display: flex;
+  padding: 175px 140px 200px 100px;
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+  }
+
+  &::before {
+    top: 96px;
+    left: 15px;
+    width: 67px;
+    height: 62px;
+    background: url('../../../assets/images/yellow-square.png') no-repeat;
+  }
+
+  &::after {
+    bottom: 80px;
+    right: 0;
+    width: 67px;
+    height: 62px;
+    background: url('../../../assets/images/white-square.png') no-repeat;
+  }
+}
+
+.title {
+  font-size: 60px;
+  line-height: 73px;
+  color: $color-white;
+  text-shadow: 0 1px 5px rgb(0 0 0 / 25%);
+  margin-bottom: 10px;
+}
+
+.description {
+  display: inline-block;
+  width: 447px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-white;
+  margin: 0 0 40px;
+}
+
+.button {
+  background: $color-yellow;
+  padding: 12px 24px;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 33px;
+  color: $color-black;
+
+  &:hover {
+    background: $color-yellow-hover;
+  }
+
+  &:active {
+    background: $color-yellow;
+  }
+
+  &:disabled {
+    cursor: auto;
+  }
+
+  & svg {
+    margin-right: 10px;
+    fill: $color-total-black;
+  }
+}

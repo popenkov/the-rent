@@ -1,0 +1,47 @@
+/* .MuiSwitch-root {
+   padding: 0 !important;
+   margin: 0 !important;
+   width: 34px !important;
+   height: 20px !important;
+}
+.MuiSwitch-colorPrimary {
+    //background: #FFFFFF;
+    color:red !important;
+    //box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.MuiSwitch-colorSecondary {
+    //background: #BDBDBD;
+    color:green !important;
+}
+
+.MuiSwitch-thumb {
+    width: 14px !important;
+    height: 14px !important;
+    background: #FFFFFF !important;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 50% !important;
+}
+
+.MuiSwitch-track {
+    width: 34px !important;
+    height: 20px !important;
+    background: #BDBDBD !important;
+    border-radius: 100px !important;
+}
+
+.MuiSwitch-input {
+    width: 34px !important;
+    height: 20px !important;
+} */
+
+.MuiFormControlLabel-label {
+  flex-shrink: 0 !important;
+  font-family: Inter, sans-serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: $color-grey-dark !important;
+  height: 22px !important;
+}

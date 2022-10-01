@@ -1,0 +1,125 @@
+.subnav {
+  background: $color-white;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 8%);
+
+  & .container {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 15px;
+  }
+
+  &__logo {
+    margin-right: 84.4px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 80px;
+    height: 40px;
+    margin-bottom: -20px;
+    position: relative;
+    border-bottom: 3px solid transparent;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    &_active {
+      color: $color-black;
+      border-bottom: 3px solid $color-yellow;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+
+      & .subnav__map {
+        fill: $color-yellow-hover;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    height: 40px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-black;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+      border-bottom: 3px solid $color-yellow;
+
+      & .subnav__map {
+        fill: $color-yellow-hover;
+      }
+    }
+  }
+
+  &__submenu {
+    position: absolute;
+    top: 64px;
+    width: 242px;
+    background: $color-white;
+    box-shadow: 0 0 40px rgb(135 124 202 / 30%);
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  &__sub-item {
+    padding-left: 15px;
+    padding-right: 11px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      border-radius: 0;
+
+      &:first-child,
+      &:last-child {
+        border-radius: 10px;
+      }
+
+      background-color: $color-grey-default;
+    }
+  }
+
+  &__sub-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-black;
+    height: 37px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    margin-left: auto;
+    background: $color-violet-gradient;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background: $color-violet-gradient-hover;
+    }
+
+    &:active {
+      background: $color-violet-gradient;
+    }
+  }
+
+  &__map {
+    fill: $color-yellow;
+    margin-left: 12px;
+  }
+}

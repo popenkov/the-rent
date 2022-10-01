@@ -1,0 +1,14 @@
+//Более поздние компоненты сделаны через scss modules. Здесь подключены стили для ранних.
+
+@import 'components/UI/SSelector/SSelect';
+@import 'components/UI/Switch/Switch';
+@import 'components/Header/Nav/Nav';
+@import 'components/Header/SubNav/SubNav';
+@import 'components/Footer/Footer';
+@import 'components/Footer/Info/Info';
+@import 'components/Footer/FooterSubNav/FooterSubNav';
+@import 'components/Footer/FooterNav/FooterNav';
+// @import 'components/Social/Social';
+@import 'components/Payment/Payment';
+@import 'components/Breadcrumbs/Breadcrumbs';
+@import 'components/NewsPreview/NewsPreview';

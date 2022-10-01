@@ -1,0 +1,96 @@
+@import 'styles/helpers/variables';
+
+.container {
+  width: 306px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-grey-dark;
+
+  & a {
+    font-weight: 500;
+    line-height: 20px;
+    color: $color-cobalt;
+    flex-shrink: 0;
+  }
+}
+
+.title {
+  font-size: 25px;
+  color: $color-total-black;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-grey-dark;
+  margin-bottom: 35px;
+}
+
+.fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 38px;
+}
+
+.buttons {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.buttonWarning {
+  background: $color-red;
+  border-radius: 33px;
+  font-size: 16px;
+  padding: 12px 24px;
+
+  & svg {
+    margin-left: 15px;
+    fill: $color-white-50;
+  }
+
+  &:hover {
+    background: $color-red-hover;
+  }
+
+  &:active {
+    background: $color-red;
+  }
+}
+
+.buttonLogin {
+  background: $color-yellow;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 33px;
+    color: $color-black;
+
+    &:hover {
+      background: $color-yellow-hover;
+    }
+
+    &:active {
+      background: $color-yellow;
+    }
+
+    &:disabled {
+      cursor: auto;
+    }
+}

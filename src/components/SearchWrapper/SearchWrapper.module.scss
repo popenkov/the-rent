@@ -1,0 +1,21 @@
+@import 'styles/helpers/variables';
+
+.wrapper {
+  width: 848.5px;
+  height: 999.21px;
+  position: relative;
+  padding-left: 97.16px;
+  padding-top: 55.08px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 848.5px;
+    height: 999.21px;
+    border-radius: 40px;
+    background: $color-violet-gradient-light;
+    opacity: 0.1;
+  }
+}

@@ -1,0 +1,46 @@
+// Colors
+$color-white: #fff;
+$color-white-10: rgb(255 255 255 / 10%);
+$color-white-40: rgb(255 255 255 / 40%);
+$color-white-50: rgb(255 255 255 / 50%);
+$color-white-70: rgb(255 255 255 / 70%);
+$color-background-white: #fff;
+$color-total-black: #000;
+$color-black: #1e2123;
+$color-black-light: #333;
+$color-black-40: rgb(30 33 35 / 40%);
+$color-yellow: #ffd54f;
+$color-yellow-10: rgb(255 213 79 / 10%);
+$color-yellow-20: rgb(255 213 79 / 20%);
+$color-yellow-hover: #fec100;
+$color-yellow-dark: #feb700;
+$color-grey-dark: #686868;
+$color-grey-text: #242424;
+$color-grey-dark-30: rgb(104 104 104 / 30%);
+$color-grey-font: #8291a3;
+$color-grey-light: #bdbdbd;
+$color-grey-default: #f8f8f8;
+$color-grey-default-hover: #f1f1f1;
+$color-cobalt: #664ef9;
+$color-cobalt-5: rgb(102 78 249 / 5%);
+$color-cobalt-10: rgb(102 78 249 / 10%);
+$color-cobalt-20: rgb(102 78 249 / 20%);
+$color-cobalt-80: rgb(102 78 249 / 80%);
+$color-cobalt-light: #4e64f9;
+$color-cobalt-hover: #5c35f9;
+$color-violet: rgb(80 57 189 / 50%);
+$color-violet-viber: #7b519d;
+$color-green-whatsapp: #0dbb41;
+$color-red: #eb5757;
+$color-red-10: rgb(235 87 87 / 10%);
+$color-red-50: rgb(235 87 87 / 50%);
+$color-red-hover: #b02828;
+$color-yellow-gradient: linear-gradient(106.06deg, #ffd54f 1.12%, #fec100 97.96%);
+$color-yellow-gradient-hover: linear-gradient(105.54deg, #ffd54f 33.53%, #fec100 94.13%);
+$color-violet-gradient: linear-gradient(90deg, #9d94ff 0%, #6b50e9 94.5%);
+$color-violet-gradient-hover: linear-gradient(90deg, #867cfc 0%, #6929f3 94.5%);
+$color-violet-gradient-light: linear-gradient(90deg, #94afff 0%, #4e64f9 94.5%);
+$color-violet-gradient-dark: linear-gradient(270deg, #7e6af3 0%, #6540cd 100%);
+
+// Device
+$desktop-width: 1440px;

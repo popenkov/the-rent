@@ -1,0 +1,36 @@
+@import 'styles/helpers/variables';
+
+.title {
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.img img {
+  width: 100%;
+  max-width: 844px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 20px 40px rgb(39 95 158 / 10%);
+}
+
+.date {
+  width: 125px;
+  background: $color-cobalt-10;
+  padding: 10px 8px;
+  border-radius: 18px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-cobalt;
+  text-align: center;
+}
+
+.text {
+  line-height: 24px;
+}

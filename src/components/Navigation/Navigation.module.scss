@@ -1,0 +1,25 @@
+@import 'styles/helpers/variables.scss';
+
+.button {
+  width: 39px;
+  height: 39px;
+  border: 1px solid $color-cobalt;
+  border-radius: 50%;
+  z-index: 2;
+  position: relative;
+
+  &:hover {
+    background: $color-cobalt-10;
+  }
+}
+
+.iconRight {
+  transform: rotateY(180deg);
+}
+
+.disabled {
+  cursor: auto;
+  &:hover {
+    background: transparent;
+  }
+}

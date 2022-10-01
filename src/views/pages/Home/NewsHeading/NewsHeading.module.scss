@@ -1,0 +1,35 @@
+@import 'styles/helpers/variables';
+
+.news {
+  width: 406px;
+  background: $color-white;
+  box-shadow: 0 20px 40px rgb(135 124 202 / 15%);
+  border-radius: 10px;
+  padding: 33px 23px;
+}
+
+.title {
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+
+.button {
+  color: $color-cobalt;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+
+    &:hover {
+      color: $color-cobalt-hover;
+    }
+
+    &:active {
+      color: $color-cobalt;
+    }
+
+    & svg {
+      margin-left: 12px;
+      stroke: $color-cobalt;
+    }
+}

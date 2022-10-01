@@ -1,0 +1,67 @@
+.filter {
+  margin-bottom: 86px;
+}
+
+.popular {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 145px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 61px;
+    height: 61px;
+    background-image: url('../../../assets/images/yellow-square.png');
+    background-size: 61px 61px;
+    bottom: -103px;
+    left: -30px;
+  }
+}
+
+.services {
+  margin-top: -125px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 125px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 61px;
+    height: 61px;
+    background-image: url('../../../assets/images/yellow-square.png');
+    background-size: 61px 61px;
+    bottom: -103px;
+    right: 88px;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.newsHeadlines {
+  margin-top: 14px;
+}
+
+.map {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 61px;
+    height: 61px;
+    background-image: url('../../../assets/images/white-square.png');
+    background-size: 61px 61px;
+    top: 47px;
+    right: 140px;
+    z-index: 1;
+  }
+}

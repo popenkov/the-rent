@@ -1,0 +1,37 @@
+.footer-subnav {
+  display: flex;
+  flex-flow: column wrap;
+  height: 128px;
+  width: 585px;
+
+  &__item {
+    margin-bottom: 21px;
+  }
+
+  &__link {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    color: $color-black;
+
+    &_last {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__submenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__sub-link {
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-grey-font;
+  }
+
+  &__sub-item {
+    margin-bottom: 8px;
+  }
+}

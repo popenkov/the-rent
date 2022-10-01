@@ -1,0 +1,12 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  height: 200px;
+}
+
+.item {
+  margin-bottom: 10px;
+  width: 198px;
+}

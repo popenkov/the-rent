@@ -1,0 +1,25 @@
+@import 'styles/helpers/variables';
+
+.filter {
+  height: 430px;
+  background-image: linear-gradient(360deg, rgba(126, 106, 243, 0.2) 15.95%, rgba(101, 64, 205, 0.3) 63.1%),
+    url('../../../../assets/images/background-filter.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 0 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 82px;
+}
+
+.title {
+  line-height: 36px;
+  color: $color-white;
+  text-shadow: 0 2px 5px rgb(0 14 142 / 30%);
+  margin-bottom: 50px;
+
+  & span {
+    color: $color-yellow;
+  }
+}

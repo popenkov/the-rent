@@ -1,0 +1,106 @@
+.select {
+  height: 37px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  position: relative;
+
+  &_metroIcon {
+    position: absolute;
+    top: 11px;
+    left: 14px;
+  }
+
+  &_sortIcon {
+    position: absolute;
+    top: 10px;
+    left: 11px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    min-width: 150px;
+    height: 37px;
+    background: $color-grey-default;
+    //color: $color-grey-dark;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: url('../../../assets/images/icons/arrow.svg');
+    background-position: right 16px top 50%;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 9px 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    &::placeholder {
+      //color: $color-grey-dark;
+      color: $color-black;
+      opacity: 1;
+    }
+
+    &:hover {
+      background: rgb(102 78 249 / 10%);
+      background-image: url('../../../assets/images/icons/arrow.svg');
+      background-position: right 16px top 50%;
+      background-size: 10px 10px;
+      background-repeat: no-repeat;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &_active {
+      background: $color-white;
+      background-image: url('../../../assets/images/icons/arrow.svg');
+      background-size: 10px 10px;
+      background-repeat: no-repeat;
+      box-shadow: (0 5px 15px rgb(135 124 202 / 25%));
+      border: 2px solid $color-cobalt-80;
+      background-position: right 14px top 50%;
+      outline: none;
+
+      &:hover {
+        background-position: right 16px top 50%;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__list {
+    position: absolute;
+    width: 150px;
+    z-index: 2;
+    background: $color-white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 40px rgb(135 124 202 / 30%);
+    border-radius: 10px;
+  }
+
+  &__item {
+    height: 37px;
+    padding: 10px 15px;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: $color-grey-default;
+      border-radius: 0;
+      cursor: pointer;
+
+      &:first-child {
+        border-radius: 10px 10px 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 0 10px 10px;
+      }
+    }
+  }
+}

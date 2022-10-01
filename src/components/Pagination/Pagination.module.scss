@@ -1,0 +1,24 @@
+@import 'styles/helpers/variables';
+
+.list {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-grey-dark;
+  cursor: pointer;
+
+  &_current {
+    font-weight: 700;
+    height: 24px;
+    color: #000;
+    border-bottom: 2px solid $color-yellow;
+  }
+}

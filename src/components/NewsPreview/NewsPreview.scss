@@ -1,0 +1,74 @@
+.news-preview {
+  width: 406px;
+  height: 500px;
+  box-shadow: (0 20px 40px rgb(135 124 202 / 15%));
+  padding-bottom: 23.54px;
+  background: $color-white;
+  position: relative;
+  border-radius: 10px;
+
+  &__img {
+    margin-bottom: 30px;
+    width: 406px;
+    height: 226.46px;
+
+    & img {
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  &__info {
+    padding-left: 20.46px;
+    padding-right: 20px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-grey-dark;
+    border-bottom: 2px solid $color-grey-default;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+  }
+
+  &__description p {
+    margin: 0;
+    -webkit-line-clamp: 5;
+    display: -webkit-box; // stylelint:fix исправляет на display: box (а надо -webkit-box) и точки в тексте исчезают, выводится лишний текст
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__date {
+    width: 125px;
+    background: $color-grey-default;
+    padding: 10px 8px;
+    border-radius: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-grey-font;
+    text-align: center;
+  }
+
+  &__link {
+    width: 81px;
+    background: $color-cobalt-10;
+    padding: 10px 15px;
+    border-radius: 17px;
+    color: $color-cobalt;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

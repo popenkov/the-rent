@@ -1,0 +1,95 @@
+@import 'styles/helpers/variables';
+
+.card {
+  width: 407px;
+  height: 270px;
+  font-weight: 700;
+  border-radius: 10px;
+  background: $color-black-40;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  height: 270px;
+  padding: 37px 20px 19px 37px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.description {
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  background: $color-violet-gradient;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-white;
+  text-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  padding-right: 40px;
+  margin-top: 21px;
+}
+
+.button {
+  margin-top: auto;
+  margin-left: auto;
+}
+
+.img {
+  width: 100%;
+  max-height: 270px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.icon {
+  fill: transparent;
+  stroke: $color-white;
+
+  &:hover {
+    stroke: $color-white-70;
+  }
+}
+
+.cardWide {
+  width: 516px;
+
+  & .description {
+    margin-bottom: 21px;
+  }
+}
+
+.buttonTag {
+  background: $color-cobalt;
+  border-radius: 33px;
+  width: auto;
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-white-70;
+  padding: 8px 14px;
+
+  &:hover {
+    background: $color-cobalt-hover;
+  }
+
+  &:active {
+    background: $color-cobalt;
+  }
+}
