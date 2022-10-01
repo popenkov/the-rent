@@ -24,10 +24,10 @@ export const NewsHeading = () => {
 
   return (
     <article className={styles.news}>
-      <h2 className={styles.title}>Новости</h2>
+      <h2 className={styles.title}>News</h2>
       <NewsHeadlines data={data} newsPerPage={NEWS_PER_PAGE} />
       <Button onClick={() => navigate(PagesLinks.NEWS_PAGE)} className={styles.button}>
-        Посмотреть все
+        View all
         <ArrowIcon width={10} height={10} />
       </Button>
     </article>

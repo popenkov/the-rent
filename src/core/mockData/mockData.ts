@@ -617,11 +617,11 @@ export const about: AboutProps = {
 
 export const recommendationsMinsk: RecommendationProps[] = [
   { label: 'Сheap', path: `${PagesLinks.APARTMENTS_MINSK_PAGE}?priceTo=50` },
-  { label: 'One-room', path: `${PagesLinks.APARTMENTS_MINSK_PAGE}?rooms=1+комн.` },
-  { label: 'Two-room', path: `${PagesLinks.APARTMENTS_MINSK_PAGE}?rooms=2+комн.` },
-  { label: 'Three-room', path: `${PagesLinks.APARTMENTS_MINSK_PAGE}?rooms=3+комн.` },
-  { label: 'Four-room', path: `${PagesLinks.APARTMENTS_MINSK_PAGE}?rooms=4+комн.` },
-  { label: 'Five-room', path: `${PagesLinks.APARTMENTS_MINSK_PAGE}?rooms=5+комн.` },
+  { label: 'One-room', path: `${PagesLinks.APARTMENTS_MINSK_PAGE}?rooms=1` },
+  { label: 'Two-room', path: `${PagesLinks.APARTMENTS_MINSK_PAGE}?rooms=2` },
+  { label: 'Three-room', path: `${PagesLinks.APARTMENTS_MINSK_PAGE}?rooms=3` },
+  { label: 'Four-room', path: `${PagesLinks.APARTMENTS_MINSK_PAGE}?rooms=4` },
+  { label: 'Five-room', path: `${PagesLinks.APARTMENTS_MINSK_PAGE}?rooms=5` },
   { label: 'The Bronx', path: `${PagesLinks.APARTMENTS_MINSK_PAGE}?district=bronx` },
   { label: 'Brooklyn', path: `${PagesLinks.APARTMENTS_MINSK_PAGE}?district=brooklyn` },
   { label: 'Manhattan', path: `${PagesLinks.APARTMENTS_MINSK_PAGE}?district=manhattan` },

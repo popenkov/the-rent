@@ -27,7 +27,7 @@ export const News = () => {
     <main className="container">
       <section className={styles.news}>
         <Breadcrumbs breadcrumbs={breadcrumbsForNews} />
-        <h1 className={styles.title}>Новости</h1>
+        <h1 className={styles.title}>News</h1>
         <div className={styles.search}>
           <Search />
         </div>
