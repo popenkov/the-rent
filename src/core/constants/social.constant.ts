@@ -9,18 +9,16 @@ export const enum PlacesOfUse {
 }
 
 export const socialGroups: SocialBlockProps = {
-  title: 'Мы в соцсетях',
+  title: 'Contact us in',
   socials: [
     { name: 'instagram', link: '/mock-link', icon: 'instagram-group' },
-    { name: 'vk', link: '/mock-link', icon: 'vk-group' },
     { name: 'facebook', link: '/mock-link', icon: 'facebook-group' },
   ],
 };
 
 export const socialNews: SocialBlockProps = {
-  title: 'Поделиться',
+  title: 'Share',
   socials: [
-    { name: 'vk', icon: 'vk-share' },
     { name: 'facebook', icon: 'facebook-share' },
     { name: 'viber', icon: 'viber-share' },
     { name: 'telegram', icon: 'telegram-share' },

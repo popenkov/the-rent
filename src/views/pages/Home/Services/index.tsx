@@ -18,9 +18,9 @@ export const Services = () => {
       />
       <ServiceCard
         icon={<AdIcon width={54} height={54} />}
-        subTitle={'Поднимайте объявления'}
+        subTitle={'Raise ads'}
         description={
-          'Вы в любое время можете <b>поднимать</b> объявления <b>вверх первой страницы</b> каталога, они разместятся сразу после платных объявлений до тех пор, пока другой пользователь не повторит процедуру.'
+          'You can <b>raise</b> your ads <b>to the top of the catalog</b>. They will be placed immediately after paid ads until another user repeats the procedure for their ads.'
         }
         btn={{
           children: 'Click to find out the cost',

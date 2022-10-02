@@ -6,5 +6,4 @@ export const PAYMENTS: IPayment[] = [
   { name: 'visa2', link: '/mock-link' },
   { name: 'mastercard', link: '/mock-link' },
   { name: 'mastercard2', link: '/mock-link' },
-  { name: 'belcard', link: '/mock-link' },
 ];

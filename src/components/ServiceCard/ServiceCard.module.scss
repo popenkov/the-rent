@@ -3,6 +3,8 @@
 .card {
   width: 406px;
   height: 345px;
+  display: flex;
+  flex-direction: column;
   background: $color-background-white;
   box-shadow: 0 20px 40px rgb(135 124 202 / 15%);
   border-radius: 10px;
@@ -13,7 +15,7 @@
   background-image: url('../../assets/images/backgroundGold.png');
   background-position: top;
   background-repeat: no-repeat;
-  padding: 39px 65px 45px 38px;
+  padding: 39px 65px 27px 38px;
 }
 
 .header {
@@ -52,6 +54,7 @@
 }
 
 .description {
+  flex: 1;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -78,7 +81,6 @@
   &:active {
     background: $color-yellow-gradient;
   }
-
 }
 
 .yellowGradientButton {
@@ -103,19 +105,19 @@
 
 .violetGradientButton {
   background: $color-violet-gradient-dark;
-    box-shadow: 0 15px 40px rgb(0 96 206 / 15%);
-    border-radius: 17px;
-    text-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+  box-shadow: 0 15px 40px rgb(0 96 206 / 15%);
+  border-radius: 17px;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 10%);
 
-    &:hover {
-      background: $color-violet-gradient-hover;
-    }
+  &:hover {
+    background: $color-violet-gradient-hover;
+  }
 
-    &:active {
-      background: $color-violet-gradient-dark;
-    }
+  &:active {
+    background: $color-violet-gradient-dark;
+  }
 
-    & svg {
-      margin-left: 12px;
-    }
+  & svg {
+    margin-left: 12px;
+  }
 }

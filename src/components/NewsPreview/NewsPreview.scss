@@ -50,7 +50,7 @@
   }
 
   &__date {
-    width: 125px;
+    min-width: 125px;
     background: $color-grey-default;
     padding: 10px 8px;
     border-radius: 18px;
@@ -70,5 +70,6 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
+    text-align: center;
   }
 }
