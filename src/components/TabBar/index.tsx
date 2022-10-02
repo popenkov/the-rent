@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { TabBarItem } from './TabBarItem';
-import { ApartmentsForm } from 'components/ApartmentsForm'; 
+import { ApartmentsForm } from 'components/ApartmentsForm';
 
 import styles from './TabBar.module.scss';
 
@@ -10,22 +10,17 @@ export const TabBar = () => {
 
   return (
     <section className={styles.tabBar}>
-      <TabBarItem isActive={tab === 1 ? true : false} nav={'Квартиры на сутки'} tabHandler={() => setTab(1)}>
+      <TabBarItem isActive={tab === 1 ? true : false} nav={'Apartment For A Day'} tabHandler={() => setTab(1)}>
         <ApartmentsForm />
       </TabBarItem>
-      <TabBarItem isActive={tab === 2 ? true : false} nav={'Коттеджи и усадьбы'} tabHandler={() => setTab(2)}>
-        <div>Фильтр для контента Коттеджи и усадьбы</div>
+      <TabBarItem isActive={tab === 2 ? true : false} nav={'Real Estate'} tabHandler={() => setTab(2)}>
+        <div>Fitlers for Real Estates</div>
       </TabBarItem>
-      <TabBarItem isActive={tab === 3 ? true : false} nav={'Бани и сауны'} tabHandler={() => setTab(3)}>
-        <div>Фильтр для контента Бани и сауны</div>
+      <TabBarItem isActive={tab === 3 ? true : false} nav={'Businesses'} tabHandler={() => setTab(3)}>
+        <div>Fitlers for Businesses</div>
       </TabBarItem>
-      <TabBarItem
-        isActive={tab === 4 ? true : false}
-        nav={'Авто напрокат'}
-        tabHandler={() => setTab(4)}
-        lastchild={true}
-      >
-        <div>Фильтр для контента Авто напрокат</div>
+      <TabBarItem isActive={tab === 4 ? true : false} nav={'Car rental'} tabHandler={() => setTab(4)} lastchild={true}>
+        <div>Filter for Car rental</div>
       </TabBarItem>
     </section>
   );

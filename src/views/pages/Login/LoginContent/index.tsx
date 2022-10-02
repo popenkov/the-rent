@@ -23,18 +23,18 @@ export const LoginContent = () => {
   const validationSchema: unknown = yup.object().shape({
     login: yup
       .string()
-      .required('Обязательно для заполнения')
-      .matches(/^[a-zA-Z]+$/, 'Допускаются только латинские символы'),
+      .required('Login is required')
+      .matches(/^[a-zA-Z]+$/, 'Only latin symbols'),
     pass: yup
       .string()
-      .required('Обязательно для заполнения')
-      .matches(/^[a-zA-Z]+$/, 'Допускаются только латинские символы'),
+      .required('Password is required')
+      .matches(/^[a-zA-Z]+$/, 'Only latin symbols'),
   });
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Авторизация</h1>
-      <div className={styles.description}>Авторизируйтесь, чтобы начать публиковать свои объявления</div>
+      <h1 className={styles.title}>Authorization</h1>
+      <div className={styles.description}>Log in to publish your ads</div>
       <Formik
         initialValues={initialValues}
         validateOnChange={false}
@@ -55,7 +55,7 @@ export const LoginContent = () => {
               <div className={styles.controls}>
                 <SInput
                   type="text"
-                  placeholder="Логин"
+                  placeholder="Username"
                   iconName="user"
                   name={'login'}
                   isWarning={errors.login ? true : false}
@@ -63,26 +63,26 @@ export const LoginContent = () => {
                 />
                 <SInput
                   type="password"
-                  placeholder="Пароль"
+                  placeholder="Password"
                   iconName="pass"
                   name={'pass'}
                   isWarning={errors.pass ? true : false}
                   width={'306px'}
                 />
                 <div className={styles.remember}>
-                  <FormControlLabel control={<SSwitch sx={{ m: 1 }} />} label="Запомнить меня" />
-                  <Link to={'/mock-link'}>Забыли пароль?</Link>
+                  <FormControlLabel control={<SSwitch sx={{ m: 1 }} />} label="Remember my device" />
+                  <Link to={'/mock-link'}>Have you forgotten the password?</Link>
                 </div>
               </div>
               <div className={styles.buttons}>
                 {!isValid && (
                   <Button type="submit" className={styles.buttonWarning} onClick={handleSubmit}>
-                    Ошибка ввода
+                    Invalid data
                     <WarningIcon width={20} height={20} />
                   </Button>
                 )}
                 <Button type="submit" className={styles.buttonLogin} onClick={handleSubmit}>
-                  Войти
+                  Log in
                 </Button>
               </div>
             </fieldset>
@@ -90,7 +90,7 @@ export const LoginContent = () => {
         )}
       </Formik>
       <div className={styles.footer}>
-        Еще нет аккаунта? <Link to={PagesLinks.REG_PAGE}>Создайте аккаунт</Link>
+        No account? <Link to={PagesLinks.REG_PAGE}>Register</Link>
       </div>
     </div>
   );

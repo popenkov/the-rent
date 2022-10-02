@@ -74,7 +74,7 @@ export const ApartmentCardHorizontal: FC<{ apartment: ApartmentCardProps }> = (p
             {address.metro}
           </div>
           <div className={styles.tag}>
-            <span dangerouslySetInnerHTML={{ __html: 'район:&nbsp;' }}></span>
+            <span dangerouslySetInnerHTML={{ __html: 'district:&nbsp;' }}></span>
             {address.district}
           </div>
         </div>
@@ -92,7 +92,7 @@ export const ApartmentCardHorizontal: FC<{ apartment: ApartmentCardProps }> = (p
             }}
           >
             <PhoneIcon width={9} height={15} />
-            Контакты
+            Contacts
           </Button>
           {location.pathname !== PagesLinks.MAIN_PAGE && (
             <Button
@@ -101,11 +101,11 @@ export const ApartmentCardHorizontal: FC<{ apartment: ApartmentCardProps }> = (p
               }}
               className={!liked ? styles.buttonLiked : clsx(styles.buttonLiked, styles.buttonLikedActive)}
             >
-              {!liked ? 'В закладки' : 'Добавлено'}
+              {!liked ? 'To favorites' : 'Added'}
             </Button>
           )}
           <Button className={styles.buttonMore} onClick={() => navigate(`${PagesLinks.APARTMENTS_MINSK_PAGE}/${id}`)}>
-            Подробнее
+            More info
           </Button>
         </footer>
       </div>

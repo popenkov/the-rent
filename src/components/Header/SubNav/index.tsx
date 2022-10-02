@@ -1,7 +1,7 @@
 import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import { Logo } from 'components/Logo'; 
+import { Logo } from 'components/Logo';
 import { IItemSubNav } from './SubNav.type';
 import { PagesLinks } from 'core/constants/pagesLinks.constant';
 import { ReactComponent as MapIcon } from 'assets/images/icons/map.svg';
@@ -11,31 +11,31 @@ import { Button } from 'components/UI/Button';
 export const SubNav: FC<{ menu: IItemSubNav[] }> = (props) => {
   const [isActiveSubmenu, setIsActiveSubmenu] = useState(false);
   const location = useLocation();
-  const [titleForApartments, setTitleForApartments] = useState('Квартиры на сутки');
+  const [titleForApartments, setTitleForApartments] = useState('Apartment For A Day');
   const refSubMenu = useRef() as React.MutableRefObject<HTMLUListElement>;
 
   const getTitleForApartments = (path) => {
     switch (path) {
       case PagesLinks.APARTMENTS_MINSK_PAGE:
-        setTitleForApartments('Квартиры в Минске');
+        setTitleForApartments('Appartment in New York');
         break;
       case PagesLinks.APARTMENTS_GOMEL_PAGE:
-        setTitleForApartments('Квартиры в Гомеле');
+        setTitleForApartments('Appartment in Washington');
         break;
       case PagesLinks.APARTMENTS_BREST_PAGE:
-        setTitleForApartments('Квартиры в Бресте');
+        setTitleForApartments('Appartment in San Francisco');
         break;
       case PagesLinks.APARTMENTS_VITEBSK_PAGE:
-        setTitleForApartments('Квартиры в Витебске');
+        setTitleForApartments('Appartment in Boston');
         break;
       case PagesLinks.APARTMENTS_GRODNO_PAGE:
-        setTitleForApartments('Квартиры в Гродно');
+        setTitleForApartments('Appartment in Chicago');
         break;
       case PagesLinks.APARTMENTS_MOGILEV_PAGE:
-        setTitleForApartments('Квартиры в Могилеве');
+        setTitleForApartments('Appartment in Las Vegas');
         break;
       default:
-        setTitleForApartments('Квартиры на сутки');
+        setTitleForApartments('Apartment For A Day');
         break;
     }
   };
@@ -85,12 +85,12 @@ export const SubNav: FC<{ menu: IItemSubNav[] }> = (props) => {
             >
               {location.pathname === item.link ? (
                 <>
-                  {item.title == 'Квартиры на сутки' ? titleForApartments : item.title}
+                  {item.title == 'Apartment For A Day' ? titleForApartments : item.title}
                   {item.map && <MapIcon className={'subnav__map'} width={12} height={15} />}
                 </>
               ) : (
                 <Link to={item.link ? item.link : '#'} title={item.title} className={'subnav__link'}>
-                  {item.title == 'Квартиры на сутки' ? titleForApartments : item.title}
+                  {item.title == 'Apartment For A Day' ? titleForApartments : item.title}
                   {item.map && <MapIcon className={'subnav__map'} width={12} height={15} />}
                 </Link>
               )}
@@ -111,11 +111,11 @@ export const SubNav: FC<{ menu: IItemSubNav[] }> = (props) => {
         </ul>
         <Button
           onClick={() => {
-            console.log('Переход на страницу Разместить объявление');
+            console.log('+ Place an ad');
           }}
           className="subnav__button"
         >
-          + Разместить объявление
+          + Place an ad
         </Button>
       </div>
     </div>

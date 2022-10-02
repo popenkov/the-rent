@@ -94,10 +94,10 @@ export const ApartmentCardVertical: FC<{ apartment: ApartmentCardProps }> = (pro
             }}
           >
             <PhoneIcon width={9} height={15} />
-            Контакты
+            Contacts
           </Button>
           <Button className={styles.buttonMore} onClick={() => navigate(`${PagesLinks.APARTMENTS_MINSK_PAGE}/${id}`)}>
-            Подробнее
+            More info
           </Button>
         </footer>
       </div>

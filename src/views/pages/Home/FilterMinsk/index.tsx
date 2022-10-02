@@ -56,7 +56,7 @@ export const FilterMinsk = () => {
                     {
                       <SSelector
                         options={districtsMinskList}
-                        placeholder={district ? district : 'Район'}
+                        placeholder={district ? district : 'District'}
                         name={'district'}
                         className={styles.input}
                         setValue={setFieldValue}

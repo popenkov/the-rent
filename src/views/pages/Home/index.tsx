@@ -33,9 +33,9 @@ export const Home = () => {
       </div>
       <div className={styles.map}>
         <SearchOnMap
-          title={'Поиск квартир на карте'}
-          description={'Ищите квартиры на сутки в центре города, возле парка или в живописном районе'}
-          btn={{ children: 'Открыть карту', onClick: () => navigate(PagesLinks.MAPS_PAGE) }}
+          title={'Search for an apartment on map'}
+          description={'Use map to find your next apartment'}
+          btn={{ children: 'Open map', onClick: () => navigate(PagesLinks.MAPS_PAGE) }}
           height={'440px'}
         />
       </div>

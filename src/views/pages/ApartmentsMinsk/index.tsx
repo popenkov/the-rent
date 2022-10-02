@@ -119,11 +119,11 @@ export const ApartmentsMinsk = () => {
       filteredApartments = filteredApartments.filter((apart) => options.some((item) => apart.options.includes(item)));
     }
 
-    if (sortMode == 'По возрастанию') {
+    if (sortMode == 'Ascending') {
       filteredApartments = [...filteredApartments].sort((a, b) => a.price - b.price);
     }
 
-    if (sortMode == 'По убыванию') {
+    if (sortMode == 'Descending') {
       filteredApartments = [...filteredApartments].sort((a, b) => b.price - a.price);
     }
 
@@ -135,7 +135,7 @@ export const ApartmentsMinsk = () => {
       <div className="container">
         <div className={styles.top}>
           <Breadcrumbs breadcrumbs={breadcrumbsForApartmentsMinsk} />
-          <h1 className={styles.title}>Аренда квартир на сутки в Минске</h1>
+          <h1 className={styles.title}>Apartment For A Day in New York</h1>
           <div className={styles.recommendations}>
             <Recommendations recommendations={recommendations} />
           </div>
@@ -165,9 +165,9 @@ export const ApartmentsMinsk = () => {
         </div>
       </div>
       <SearchOnMap
-        title={'Показать найденные квартиры на карте'}
-        description={'Ищите новостройки рядом с работой, парком или родственниками'}
-        btn={{ children: 'Открыть карту', onClick: () => navigate(PagesLinks.MAPS_PAGE) }}
+        title={'Show found apartments on a map'}
+        description={'Search for your next apartment on map'}
+        btn={{ children: 'Show map', onClick: () => navigate(PagesLinks.MAPS_PAGE) }}
         height={'310px'}
       />
     </main>

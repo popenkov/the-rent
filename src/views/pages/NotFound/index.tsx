@@ -19,11 +19,11 @@ export const NotFound = () => {
     <main className={styles.error}>
       <div className={`container ${styles.container}`}>
         <div className={styles.info}>
-          <h1 className={styles.title}>Ошибка 404</h1>
-          <p className={styles.description}>Возможно, у вас опечатка в адресе страницы, или её просто не существует</p>
+          <h1 className={styles.title}>Error 404</h1>
+          <p className={styles.description}>Page not found </p>
           <Button className={styles.button} onClick={handleButtonClick}>
             <HomeIcon width={12} height={12} />
-            Вернуться на главную
+            Back to home page
           </Button>
         </div>
         <div className={styles.code}>

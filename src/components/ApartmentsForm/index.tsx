@@ -199,20 +199,20 @@ export const ApartmentsForm = () => {
                   <div className={clsx(styles.container, viewForm == 'Minsk' && 'container')}>
                     {viewForm == 'Home' && (
                       <div className={styles.item}>
-                        <div className={styles.itemTitle}>Город</div>
+                        <div className={styles.itemTitle}>City</div>
                         <SSelector
                           options={cities}
-                          placeholder={initialValues.city ? initialValues.city : 'Выберите'}
+                          placeholder={initialValues.city ? initialValues.city : 'Choose'}
                           name={'city'}
                           setValue={setFieldValue}
                         />
                       </div>
                     )}
                     <div className={clsx(styles.item, viewForm == 'Minsk' && styles.itemCity)}>
-                      <div className={styles.itemTitle}>Комнаты</div>
+                      <div className={styles.itemTitle}>Rooms</div>
                       <SSelector
                         options={roomsList}
-                        placeholder={roomsMinsk ? roomsMinsk : 'Выберите'}
+                        placeholder={roomsMinsk ? roomsMinsk : 'Choose'}
                         name={'rooms'}
                         setValue={setFieldValue}
                       />
@@ -238,7 +238,7 @@ export const ApartmentsForm = () => {
                         className={styles.buttonOptions}
                         onClick={viewForm == 'Home' ? handleBtnOptionsHome(handleSubmit) : handleBtnOptionsCity}
                       >
-                        Больше опций
+                        More options
                         <OptionsIcon width={16} height={18} />
                       </Button>
                     </div>
@@ -260,14 +260,14 @@ export const ApartmentsForm = () => {
                             dispatch(setSortMode(''));
                           }}
                         >
-                          Очистить
+                          Clear
                         </Button>
                       </div>
                     )}
                     {viewForm == 'Home' && (
                       <div className={clsx(styles.item)}>
                         <Button className={styles.buttonMapHome} onClick={handleSubmit}>
-                          На карте
+                          Show on map
                           <MapIcon width={12} height={15} />
                         </Button>
                       </div>
@@ -275,13 +275,13 @@ export const ApartmentsForm = () => {
                     <div className={styles.button}>
                       {viewForm == 'Home' && (
                         <Button type="submit" className={styles.buttonSubmitHome} onClick={handleSubmit}>
-                          Показать
+                          Show
                           <ArrowIcon width={10} height={10} />
                         </Button>
                       )}
                       {viewForm == 'Minsk' && (
                         <Button type="submit" className={styles.buttonSubmitCity} onClick={handleSubmit}>
-                          Показать объекты
+                          Show items
                           <ArrowIcon width={10} height={10} />
                         </Button>
                       )}
@@ -294,20 +294,20 @@ export const ApartmentsForm = () => {
                     <div className={clsx(styles.container, 'container')}>
                       <div className={clsx(styles.options)} ref={optionsRef}>
                         <div className={clsx(styles.item, styles.itemAdd)}>
-                          <div className={styles.itemTitle}>Спальные места</div>
+                          <div className={styles.itemTitle}>Sleeping places</div>
                           <SSelector
                             options={peopleList}
-                            placeholder={initialValues.peopleCount ? initialValues.peopleCount : 'Выберите'}
+                            placeholder={initialValues.peopleCount ? initialValues.peopleCount : 'Choose'}
                             name={'peopleCount'}
                             setValue={setFieldValue}
                             className={styles.input}
                           />
                         </div>
                         <div className={clsx(styles.item, styles.itemAdd)}>
-                          <div className={styles.itemTitle}>Район</div>
+                          <div className={styles.itemTitle}>District</div>
                           <SSelector
                             options={districtsMinskList}
-                            placeholder={initialValues.district ? initialValues.district : 'Выберите'}
+                            placeholder={initialValues.district ? initialValues.district : 'Choose'}
                             name={'district'}
                             setValue={setFieldValue}
                             className={styles.input}
@@ -317,7 +317,7 @@ export const ApartmentsForm = () => {
                           <div className={styles.itemTitle}>Subway</div>
                           <SSelector
                             options={metroMinskList}
-                            placeholder={initialValues.metro ? initialValues.metro : 'Выберите'}
+                            placeholder={initialValues.metro ? initialValues.metro : 'Choose'}
                             name={'metro'}
                             setValue={setFieldValue}
                             className={styles.input}
@@ -333,7 +333,7 @@ export const ApartmentsForm = () => {
                         <div className={styles.sort}>
                           <SSelector
                             options={sortList}
-                            placeholder={initialValues.sort ? initialValues.sort : 'По умолчанию'}
+                            placeholder={initialValues.sort ? initialValues.sort : 'DEFAULT'}
                             name={'sort'}
                             setValue={setFieldValue}
                             setSelectedSwiftly={useUpdateFilter(setSortMode, values.sort)}
@@ -345,20 +345,20 @@ export const ApartmentsForm = () => {
                             onClick={() => dispatch(setListMode(true))}
                           >
                             <ListIcon width={14} height={14} />
-                            Список
+                            List
                           </Button>
                           <Button
                             className={clsx(styles.buttonMode, !listMode && styles.buttonModeActive)}
                             onClick={() => dispatch(setListMode(false))}
                           >
                             <TileIcon width={14} height={14} />
-                            Плитки
+                            Table
                           </Button>
                         </div>
                         <div className={styles.map}>
                           <Button className={styles.buttonMapCity} onClick={() => navigate(PagesLinks.MAPS_PAGE)}>
                             <MapIcon width={11} height={14} />
-                            Показать на карте
+                            On map
                           </Button>
                         </div>
                       </section>

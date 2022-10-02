@@ -51,7 +51,7 @@ export const breadcrumbsForNewsItem: IBreadcrumbs[] = [
 
 export const breadcrumbsForApartmentsMinsk: IBreadcrumbs[] = [
   {
-    title: 'Flats in New York',
+    title: 'Apartments in New York',
   },
 ];
 
@@ -61,8 +61,10 @@ for (let index = 0; index < 20; index++) {
   news.push({
     id: index + 1,
     img: room,
-    title: `Линия${index + 1} Сталина: суровый отдых в усадьбах на сутки`,
-    description: `Чем заняться в выходные?${index} Когда нет безотлагательных домашних дел, а на улице хорошая погода, хочется уехать из города, чтобы сменить обстановку. Например, снять коттедж на сутки для семьи или большой компании друзей. А бла-бла-бла`,
+    title: `News ${index + 1}: New York: best places to stay`,
+    description: `Description ${
+      index + 1
+    } Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eaque consequatur enim sit iusto provident inventore pariatur, architecto iure suscipit doloremque excepturi aspernatur beatae fugiat harum odit quo fuga reprehenderit?`,
     date: new Date(2008, 0, 14),
   });
 }
@@ -80,12 +82,12 @@ for (let index = 0; index < 20; index++) {
   newsItems.push({
     id: index + 1,
     img: room,
-    title: `Линия${index + 1} Сталина: суровый отдых в усадьбах на сутки`,
-    description: `Чем заняться в выходные?${
+    title: `Title${index + 1} The best places to stay in New York`,
+    description: `Description ${
       index + 1
-    } Когда нет безотлагательных домашних дел, а на улице хорошая погода, хочется уехать из города, чтобы сменить обстановку. Например, снять коттедж на сутки для семьи или большой компании друзей. А бла-бла-бла`,
+    } Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eaque consequatur enim sit iusto provident inventore pariatur, architecto iure suscipit doloremque excepturi aspernatur beatae fugiat harum odit quo fuga reprehenderit?`,
     date: new Date(2008, 0, 14),
-    text: '<p>Итак, утром вы выезжаете в путь по Молодеченской трассе. Если автомобиля у вас нет - садитесь на маршрутку в сторону Молодечно от железнодорожного вокзала. Остановка называется «Линия Сталина» - да-да, именно здесь вы и проведёте ближайшие несколько часов, а вероятнее всего – останетесь до самого вечера.</p><p>«Линия Сталина» - это уникальный музейный комплекс, располагающийся под открытым небом. Поэтому желательно приезжать сюда в хорошую погоду. Его территория поистине огромна: целых 26 га. Такое название дано музею неспроста: «Линией Сталина» в 20е-30е гг. XX века именовали цепь укреплений, созданную для защиты государственной границы СССР. Комплекс же построен лишь в 2005 году – к шестидесятой годовщине Победы в Великой Отечественной войне.</p><p>Если вы заранее позаботились о том, чтобы снять усадьбу на сутки в направлении Молодечно, то можете провести в музейном комплексе хоть целый день. Здесь действительно есть на что посмотреть: ДОТы, испещрённые следами немецких снарядов, окопы, противотанковые заграждения, зенитные пушки, бронетехника… Вы встретите даже элементы ракетных войск – и всё это не муляжи, а настоящие боевые орудия! За отдельную плату вам предложат пострелять из винтовки и пулемёта, а также прокатиться на танке. Проголодались? Загляните в кафе и насладитесь сытным домашним обедом.</p><p>Посетить «Линию Сталина» будет интересно как взрослым, так и детям. Особенно мальчишкам! Уставшие от впечатлений, они будут рады вместо долгой дороги домой остановиться на ночь в уютном современном коттедже. На сайте можно выбрать и снять посуточно наиболее удобный для вас вариант. Проведите незабываемые выходные за городом – приезжайте в «Линию Сталина»!</p><p>Отличная усадьба в 10 км от "Линии Сталина".</p>',
+    text: '<p>News text</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eaque consequatur enim sit iusto provident inventore pariatur, architecto iure suscipit doloremque excepturi aspernatur beatae fugiat harum odit quo fuga reprehenderit?`</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eaque consequatur enim sit iusto provident inventore pariatur, architecto iure suscipit doloremque excepturi aspernatur beatae fugiat harum odit quo fuga reprehenderit?`</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eaque consequatur enim sit iusto provident inventore pariatur, architecto iure suscipit doloremque excepturi aspernatur beatae fugiat harum odit quo fuga reprehenderit?`</p>',
   });
 }
 
@@ -159,7 +161,7 @@ export const peopleList: SelectorProps[] = [
 export const promoCards: PromoCardProps[] = [
   {
     title: 'Apartment For A Day',
-    description: 'Rent a flat',
+    description: 'Rent an appartment',
     tags: [
       {
         label: 'New York',
@@ -213,35 +215,35 @@ export const promoCards: PromoCardProps[] = [
 ];
 
 export const popularApartmentsList: PopularListProps = {
-  title: 'Flats',
+  title: 'Apartments',
   list: [
     {
-      label: 'Flats in New York',
+      label: 'Apartments in New York',
       link: PagesLinks.APARTMENTS_MINSK_PAGE,
       count: 3567,
     },
     {
-      label: 'Flats in Washington',
+      label: 'Apartments in Washington',
       link: PagesLinks.APARTMENTS_GOMEL_PAGE,
       count: 2032,
     },
     {
-      label: 'Flats in San Francisco',
+      label: 'Apartments in San Francisco',
       link: PagesLinks.APARTMENTS_GRODNO_PAGE,
       count: 2302,
     },
     {
-      label: 'Flats in Boston',
+      label: 'Apartments in Boston',
       link: PagesLinks.APARTMENTS_MOGILEV_PAGE,
       count: 110,
     },
     {
-      label: 'Flats in Chicago',
+      label: 'Apartments in Chicago',
       link: PagesLinks.APARTMENTS_BREST_PAGE,
       count: 110,
     },
     {
-      label: 'Flats in Las Vegas',
+      label: 'Apartments in Las Vegas',
       link: PagesLinks.APARTMENTS_VITEBSK_PAGE,
       count: 110,
     },
@@ -300,15 +302,15 @@ export const popularDestinationsList: PopularListProps = {
   title: 'Best Areas of New York City',
   list: [
     {
-      label: 'Flats in Long Island',
+      label: 'Apartments in Long Island',
       link: '/mock-link',
     },
     {
-      label: 'Flats in Central New York',
+      label: 'Apartments in Central New York',
       link: '/mock-link',
     },
     {
-      label: 'Flats in North Country',
+      label: 'Apartments in North Country',
       link: '/mock-link',
     },
   ],
@@ -329,7 +331,7 @@ const apartmentCard: ApartmentCardProps = {
   price: 65.0,
   peopleCount: 4,
   peopleCountByRoom: '(2+2)',
-  rooms: 'Four-room',
+  rooms: '4 rooms',
   square: 179,
   description: 'Appartment with 4 Bedrooms and 3 Bathrooms.',
   owner: {
@@ -405,7 +407,7 @@ export const apartmentsMinsk: ApartmentCardProps[] = [
     price: 65.0,
     peopleCount: 4,
     peopleCountByRoom: '(2+2)',
-    rooms: 'Four-room',
+    rooms: '4 rooms',
     square: 179,
     description: 'Appartment with 4 Bedrooms and 3 Bathrooms.',
     owner: {
@@ -431,7 +433,7 @@ export const apartmentsMinsk: ApartmentCardProps[] = [
     price: 40.0,
     peopleCount: 3,
     peopleCountByRoom: '(2+1)',
-    rooms: 'Three-room',
+    rooms: '3 rooms',
     square: 140,
     description: `One-of-a-kind elegant, sophisticated and comfortable apartment, located on a quiet, tree-lined street in Manhattan's Upper East Side, is available for rent for the first time. This classic and stately private home has been lovingly and meticulously restored inside and out.`,
     owner: {
@@ -458,7 +460,7 @@ export const apartmentsMinsk: ApartmentCardProps[] = [
     price: 70.0,
     peopleCount: 1,
     peopleCountByRoom: '(1)',
-    rooms: 'One-room',
+    rooms: '1 room',
     square: 30,
     description:
       'Large one bedroom apartment with private balcony in a super convenient midtown west/ Hells Kitchen location! Featuring Bike Room, Storage Room , Laundry in building with a part time doorman. Utilities included are heat, hot water, electric and gas! What more can you ask for !',
@@ -484,8 +486,8 @@ export const apartmentsMinsk: ApartmentCardProps[] = [
     status: 'Gold',
     price: 2500.0,
     peopleCount: 4,
-    peopleCountByRoom: '(2+2)',
-    rooms: 'One-room',
+    peopleCountByRoom: '(1)',
+    rooms: '1 room',
     square: 56,
     description:
       'Tranquility and charm awaits you at the lovely renovated 1br condominium. Experience both southern and northern light that shine through the over-sized windows throughout the day. In this gut renovated home with exposed brick wall, recess lighting and a working fire place, no details were missed. Central A/C, abundant closets space, top of the line appliances with Bosch Washer/Dryer. Located on a quiet, tree-lined street, this boutique condominium has only 8 residences. Only two homes per floor keep life intimate. No board approval for rentals. This terrific 1Br 1 bathroom is located on a tree-lined quite block. Steps to all shopping, restaurants and ALL public commute, close proximity to the Q and 6 train.',
@@ -512,7 +514,7 @@ export const apartmentsMinsk: ApartmentCardProps[] = [
     price: 65.0,
     peopleCount: 4,
     peopleCountByRoom: '(2+2)',
-    rooms: 'Four-room',
+    rooms: '4 rooms',
     square: 179,
     description: 'Appartment with 4 Bedrooms and 3 Bathrooms.',
     owner: {
@@ -538,7 +540,7 @@ export const apartmentsMinsk: ApartmentCardProps[] = [
     price: 40.0,
     peopleCount: 3,
     peopleCountByRoom: '(2+1)',
-    rooms: 'Three-room',
+    rooms: '2 rooms',
     square: 140,
     description: `One-of-a-kind elegant, sophisticated and comfortable apartment, located on a quiet, tree-lined street in Manhattan's Upper East Side, is available for rent for the first time. This classic and stately private home has been lovingly and meticulously restored inside and out.`,
     owner: {
@@ -565,7 +567,7 @@ export const apartmentsMinsk: ApartmentCardProps[] = [
     price: 70.0,
     peopleCount: 1,
     peopleCountByRoom: '(1)',
-    rooms: 'One-room',
+    rooms: '1 room',
     square: 30,
     description:
       'Large one bedroom apartment with private balcony in a super convenient midtown west/ Hells Kitchen location! Featuring Bike Room, Storage Room , Laundry in building with a part time doorman. Utilities included are heat, hot water, electric and gas! What more can you ask for !',
@@ -592,7 +594,7 @@ export const apartmentsMinsk: ApartmentCardProps[] = [
     price: 2500.0,
     peopleCount: 4,
     peopleCountByRoom: '(2+2)',
-    rooms: 'One-room',
+    rooms: '1 room',
     square: 56,
     description:
       'Tranquility and charm awaits you at the lovely renovated 1br condominium. Experience both southern and northern light that shine through the over-sized windows throughout the day. In this gut renovated home with exposed brick wall, recess lighting and a working fire place, no details were missed. Central A/C, abundant closets space, top of the line appliances with Bosch Washer/Dryer. Located on a quiet, tree-lined street, this boutique condominium has only 8 residences. Only two homes per floor keep life intimate. No board approval for rentals. This terrific 1Br 1 bathroom is located on a tree-lined quite block. Steps to all shopping, restaurants and ALL public commute, close proximity to the Q and 6 train.',

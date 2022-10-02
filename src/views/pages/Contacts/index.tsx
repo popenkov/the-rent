@@ -15,25 +15,20 @@ export const Contacts = () => {
     <main className={styles.contacts}>
       <div className={`container ${styles.container}`}>
         <section className={styles.info}>
-          <h1 className={styles.title}>Контакты</h1>
-          <p className={styles.description}>
-            Если у Вас есть пожелания, предложения или претензии по организации работы сайта мы всегда рады услышать
-            Ваше мнение.
-          </p>
+          <h1 className={styles.title}>Contacts</h1>
+          <p className={styles.description}>If you have a question or proposal, please don`t hesitate to contact us.</p>
           <Address />
           <article className={styles.notice}>
-            Администрация сайта не владеет информацией о наличии свободных квартир
+            The site administrators have no information about the availability of the flats
           </article>
         </section>
         <ContactsForm modalControl={setModal} />
         <Social socialBlock={socialContactsRight} />
       </div>
-      <Modal isActive={modal} action={'Закрыть окно'}>
+      <Modal isActive={modal} action={'Close modal'}>
         <div className={styles.modal}>
-          <h1 className={styles.modalTitle}>Ваше письмо отправлено!</h1>
-          <p className={styles.modalDescription}>
-            Какое-то сообщение о том, что письмо отправлено, какое-то сообщение, что письмо отправлено.
-          </p>
+          <h1 className={styles.modalTitle}>Thank you!</h1>
+          <p className={styles.modalDescription}>Your message was sent.</p>
         </div>
       </Modal>
     </main>

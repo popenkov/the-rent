@@ -10,7 +10,7 @@ const rootReducer = combineReducers({
   userReducer,
   filterMainReducer,
   filterMinskReducer,
-  apartmentsMinskReducer
+  apartmentsMinskReducer,
 });
 
 export const setupStore = () => {
@@ -18,7 +18,7 @@ export const setupStore = () => {
     reducer: rootReducer,
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware({
-        serializableCheck: false, //при загрузке массива новостей была проблема с тем, что данные с датой передавались с ошибкой. возможно, при загрузке с бэка этой проблемы не будет
+        serializableCheck: false,
       }),
   });
 };

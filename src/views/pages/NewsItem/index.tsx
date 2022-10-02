@@ -31,7 +31,7 @@ export const NewsItem = () => {
       </div>
       <section className={styles.list}>
         <div className="container">
-          <h2 className={styles.titleList}>Читайте также</h2>
+          <h2 className={styles.titleList}>Read more news</h2>
           <NewsList data={data} newsPerPage={NEWS_PER_PAGE} currentPage={1} />
         </div>
       </section>

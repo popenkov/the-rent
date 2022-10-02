@@ -39,8 +39,8 @@ export const RentApartment = () => {
 
   return (
     <section className={styles.rent}>
-      <div className={styles.subTitle}>Квартиры на сутки</div>
-      <h2 className={styles.title}>Аренда квартир в Минске</h2>
+      <div className={styles.subTitle}>Apartment For A Day</div>
+      <h2 className={styles.title}>Rent an appartment in New York</h2>
       <div className={styles.filter}>
         <FilterMinsk />
       </div>
@@ -64,11 +64,11 @@ export const RentApartment = () => {
               {apartments.length} <span>+</span>
             </div>
           ) : null}
-          <div className={styles.description}>Предложений по Минску</div>
+          <div className={styles.description}>Offers</div>
         </div>
         <div className={styles.buttonWrapper}>
           <Button className={styles.button} onClick={() => useNavPageCity('Минск', navigate)}>
-            Посмотреть все
+            View all
             <ArrowIcon width={10} height={10} />
           </Button>
         </div>

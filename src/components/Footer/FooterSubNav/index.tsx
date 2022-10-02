@@ -12,7 +12,7 @@ export const FooterSubNav: FC<{ menu: IItemSubNav[] }> = ({ menu }) => {
             to={item.link ? item.link : '#'}
             title={item.title}
             className={
-              item.title == 'Квартиры' ? 'footer-subnav__link footer-subnav__link_last' : 'footer-subnav__link'
+              item.title == 'Apartments' ? 'footer-subnav__link footer-subnav__link_last' : 'footer-subnav__link'
             }
           >
             {item.title}

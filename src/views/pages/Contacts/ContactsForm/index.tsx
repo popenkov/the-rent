@@ -15,9 +15,9 @@ export const ContactsForm: FC<{ modalControl }> = (props) => {
   };
 
   const validationSchema = yup.object().shape({
-    name: yup.string().required('Обязательно для заполнения'),
-    email: yup.string().email().required('Обязательно для заполнения'),
-    message: yup.string().required('Обязательно для заполнения'),
+    name: yup.string().required('Name is required'),
+    email: yup.string().email().required('Email is required'),
+    message: yup.string().required('Field is required'),
   });
 
   return (
@@ -41,36 +41,36 @@ export const ContactsForm: FC<{ modalControl }> = (props) => {
             <div className={styles.info}>
               <SInput
                 type="text"
-                placeholder="Введите имя"
+                placeholder="Enter your name"
                 iconName="user"
-                label="Ваше имя"
+                label="Your name"
                 name={'name'}
                 isWarning={errors.name ? true : false}
                 width={'260px'}
               />
               <SInput
                 type="email"
-                placeholder="Введите почту"
+                placeholder="Enter your email"
                 iconName="email"
-                label="Ваша электронная почта"
+                label="Your email"
                 name={'email'}
                 isWarning={errors.email ? true : false}
                 width={'260px'}
               />
             </div>
             <label className={styles.label}>
-              Ваше сообщение
+              Your comment
               <Field
                 as="textarea"
                 name={'message'}
-                placeholder="Сообщение"
+                placeholder="Comment"
                 className={styles.textarea}
                 style={errors.message ? { border: '1px solid #eb5757' } : { border: 'none' }}
               />
             </label>
             <div className={styles.buttonWrapper}>
               <Button type="submit" onClick={handleSubmit} className={styles.button}>
-                Отправить
+                Send
               </Button>
             </div>
           </fieldset>

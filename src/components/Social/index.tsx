@@ -71,12 +71,7 @@ export const Social: FC<{ socialBlock: SocialBlockProps }> = (props) => {
           : socials.map((social) => (
               <li className={styles.social__item} key={social.name}>
                 {placeOfUse === PlacesOfUse.Contacts ? (
-                  <a
-                    href={social.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title={`Открыть чат в ${social.name}`}
-                  >
+                  <a href={social.link} target="_blank" rel="noopener noreferrer" title={`Open chat in ${social.name}`}>
                     {settingIcon(social.icon)}
                   </a>
                 ) : (

@@ -13,7 +13,6 @@ import { PAYMENTS } from 'core/constants/payments.constant';
 import { PagesLinks } from 'core/constants/pagesLinks.constant';
 
 export const Footer = () => {
-
   return (
     <footer className="footer">
       <div className="container">
@@ -25,7 +24,7 @@ export const Footer = () => {
               <Logo />
             </Link>
           )}
-          <div className="footer__title">Сдаём бай</div>
+          <div className="footer__title">The Rent</div>
           <Info />
         </div>
         <div className="footer__nav">
@@ -37,7 +36,7 @@ export const Footer = () => {
             <Social socialBlock={socialGroups} />
           </div>
           <div className="footer__payment">
-            <Payment payments={PAYMENTS}/>
+            <Payment payments={PAYMENTS} />
           </div>
         </div>
       </div>

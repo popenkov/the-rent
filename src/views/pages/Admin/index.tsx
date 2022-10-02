@@ -1,11 +1,9 @@
-import React from 'react'
-// import { MySwiper/* , SSwiper */ } from '../../../components/UI/SSwiper'
-
+import React from 'react';
 
 export const Admin = () => {
   return (
-    <div className='container'>
-      <h1>Тестовая страница</h1>
-      </div>
-  )
-}
+    <div className="container">
+      <h1>Test page</h1>
+    </div>
+  );
+};

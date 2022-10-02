@@ -44,7 +44,7 @@ export const Search = () => {
         <SearchWrapper>
           <Form>
             <fieldset className={styles.wrapper}>
-              <SInput type="text" placeholder="Поиск по статьям" name={'query'} className={styles.input} />
+              <SInput type="text" placeholder="Search the articles" name={'query'} className={styles.input} />
               <div className={styles.button}>
                 <SButtonIcon type="submit" btnOnClick={handleSubmit}>
                   <SearchIcon width={'17.07'} height={'17.07'} />

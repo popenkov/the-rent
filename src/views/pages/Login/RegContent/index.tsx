@@ -30,24 +30,24 @@ export const RegContent = () => {
   const validationSchema: unknown = yup.object().shape({
     login: yup
       .string()
-      .required('Обязательно для заполнения')
-      .matches(/^[a-zA-Z]+$/, 'Допускаются только латинские символы'),
-    email: yup.string().email().required('Обязательно для заполнения'),
+      .required('Login is required')
+      .matches(/^[a-zA-Z]+$/, 'Only latin symbols'),
+    email: yup.string().email().required('Email is required'),
     pass: yup
       .string()
-      .required('Обязательно для заполнения')
-      .matches(/^[a-zA-Z0-9]+$/, 'Допускаются только латинские символы или цифры'),
+      .required('Password is required')
+      .matches(/^[a-zA-Z0-9]+$/, 'Only latin symbols and number'),
     confirmPass: yup
       .string()
-      .required('Обязательно для заполнения')
-      .oneOf([yup.ref('pass'), null], 'Пароли не совпадают'),
+      .required('Password is required')
+      .oneOf([yup.ref('pass'), null], 'The password are not equaled'),
   });
 
   return (
     <>
       {viewReg ? (
         <div className={styles.container}>
-          <h1 className={styles.title}>Регистрация</h1>
+          <h1 className={styles.title}>Registration</h1>
           <div className={styles.content}>
             <Formik
               initialValues={initialValues}
@@ -67,7 +67,7 @@ export const RegContent = () => {
                     <div className={styles.controls}>
                       <SInput
                         type="text"
-                        placeholder="Логин"
+                        placeholder="Username"
                         iconName="user"
                         name={'login'}
                         isWarning={errors.login ? true : false}
@@ -75,7 +75,7 @@ export const RegContent = () => {
                       />
                       <SInput
                         type="email"
-                        placeholder="Электронная почта"
+                        placeholder="Email"
                         iconName="email"
                         name={'email'}
                         isWarning={errors.email ? true : false}
@@ -83,7 +83,7 @@ export const RegContent = () => {
                       />
                       <SInput
                         type="password"
-                        placeholder="Пароль"
+                        placeholder="Password"
                         iconName="pass"
                         name={'pass'}
                         isWarning={errors.pass ? true : false}
@@ -91,7 +91,7 @@ export const RegContent = () => {
                       />
                       <SInput
                         type="password"
-                        placeholder="Повторите пароль"
+                        placeholder="Please, repeat password"
                         iconName="pass"
                         name={'confirmPass'}
                         isWarning={errors.confirmPass ? true : false}
@@ -102,12 +102,12 @@ export const RegContent = () => {
                     <div className={styles.buttons}>
                       {!isValid && (
                         <Button className={styles.buttonWarning} onClick={() => console.log('error')}>
-                          Ошибка ввода
+                          Incorrect data
                           <WarningIcon width={20} height={20} />
                         </Button>
                       )}
                       <Button type="submit" onClick={handleSubmit} disabled={!verifed} className={styles.buttonReg}>
-                        Зарегистрироваться
+                        Register
                       </Button>
                     </div>
                   </fieldset>
@@ -128,20 +128,20 @@ export const RegContent = () => {
                 </li>
               </ul>
               <div className={styles.footer}>
-                Уже есть аккаунт? <Link to={PagesLinks.LOGIN_PAGE}>Войдите</Link>
+                Have an account? <Link to={PagesLinks.LOGIN_PAGE}>Log in</Link>
               </div>
             </div>
           </div>
         </div>
       ) : (
         <div className={styles.container_confirm}>
-          <h1 className={styles.title}>Подтвердите регистрацию</h1>
+          <h1 className={styles.title}>PLease, confirm your registration</h1>
           <div className={styles.content}>
             Письмо для подтверждения аккаунта отправлено почту. Перейдите по ссылке, указанной в письме. Если письма
             нет, то проверьте спам.
           </div>
           <Button className={styles.buttonReg} onClick={() => navigate(PagesLinks.MAIN_PAGE)}>
-            Понятно
+            OK
           </Button>
         </div>
       )}

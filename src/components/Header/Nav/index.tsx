@@ -13,17 +13,16 @@ export const Nav: FC<{ menu: IItemNav[] }> = (props) => {
       <div className="container">
         <ul className="nav__main">
           {props.menu.map((item) => (
-            <li key={item.title} className={location.pathname !== item.link ? "nav__item" : "nav__item nav__item_active"}>
+            <li
+              key={item.title}
+              className={location.pathname !== item.link ? 'nav__item' : 'nav__item nav__item_active'}
+            >
               {location.pathname === item.link ? (
                 <>
                   {item.map && <MapIcon className={'map'} width={8} height={10} />} {item.title}
                 </>
               ) : (
-                <Link
-                  to={item.link}
-                  title={item.title}
-                  className={'nav__link'}
-                >
+                <Link to={item.link} title={item.title} className={'nav__link'}>
                   {item.map && <MapIcon className={'map'} width={8} height={10} />} {item.title}
                 </Link>
               )}
@@ -32,13 +31,13 @@ export const Nav: FC<{ menu: IItemNav[] }> = (props) => {
         </ul>
         <ul className="nav__sub">
           <li className="nav__bookmarks">
-            <Link to={PagesLinks.BOOKMARKS_PAGE} title="Закладки" className="nav__link">
-              Закладки
+            <Link to={PagesLinks.BOOKMARKS_PAGE} title="Favorites" className="nav__link">
+              Favorites
             </Link>
           </li>
           <li className="nav__login">
-            <Link to={PagesLinks.LOGIN_PAGE} title="Вход и регистрация" className="nav__link">
-              Вход и регистрация
+            <Link to={PagesLinks.LOGIN_PAGE} title="Login / register" className="nav__link">
+              Login / register
             </Link>
           </li>
         </ul>
