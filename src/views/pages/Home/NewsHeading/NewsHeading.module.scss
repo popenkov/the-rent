@@ -6,6 +6,10 @@
   box-shadow: 0 20px 40px rgb(135 124 202 / 15%);
   border-radius: 10px;
   padding: 33px 23px;
+
+  @media (max-width: 1200px) {
+    height: 100%;
+  }
 }
 
 .title {
@@ -15,21 +19,21 @@
 
 .button {
   color: $color-cobalt;
-    background: transparent;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 0;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0;
 
-    &:hover {
-      color: $color-cobalt-hover;
-    }
+  &:hover {
+    color: $color-cobalt-hover;
+  }
 
-    &:active {
-      color: $color-cobalt;
-    }
+  &:active {
+    color: $color-cobalt;
+  }
 
-    & svg {
-      margin-left: 12px;
-      stroke: $color-cobalt;
-    }
+  & svg {
+    margin-left: 12px;
+    stroke: $color-cobalt;
+  }
 }

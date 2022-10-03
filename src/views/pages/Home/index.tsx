@@ -44,9 +44,7 @@ export const Home = () => {
           <Services />
         </div>
         <div className={styles.info}>
-          <div className={styles.about}>
-            <About about={about} />
-          </div>
+          <About about={about} />
           <div className={styles.newsHeadlines}>
             <NewsHeading />
           </div>

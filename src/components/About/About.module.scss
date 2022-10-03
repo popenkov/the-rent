@@ -1,9 +1,15 @@
 @import 'styles/helpers/variables';
 
 .about {
-  width: 862px;
-  height: 481px;
+  width: 67%;
+  max-width: 862px;
+  min-height: 481px;
   padding: 10px;
+
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .subtitle {
@@ -56,6 +62,8 @@
 .description {
   font-size: 14px;
   line-height: 21px;
+
+  width: 90%;
 
   & p {
     margin-top: 26px;

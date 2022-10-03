@@ -1,5 +1,6 @@
 {
   "name": "rent-website",
+  "homepage": "http://popenkov.github.io/the-rent",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -35,7 +36,9 @@
     "prettier": "prettier --check src/**/*{.css,.scss}",
     "prettier:fix": "prettier --write src/**/*{.css,.scss}",
     "eslint": "eslint src/**/*{.ts,.tsx}",
-    "eslint:fix": "eslint src/**/*{.ts,.tsx} --fix"
+    "eslint:fix": "eslint src/**/*{.ts,.tsx} --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -74,6 +77,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.6.2",
     "sass": "^1.52.2",
     "styled-components": "^5.3.5",
