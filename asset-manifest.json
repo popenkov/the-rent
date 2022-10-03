@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/the-rent/static/css/main.b009c885.css",
-    "main.js": "/the-rent/static/js/main.82c12a7a.js",
+    "main.js": "/the-rent/static/js/main.1bb05895.js",
     "static/media/background-filter.jpg": "/the-rent/static/media/background-filter.6d23d27b6111bfdfc65e.jpg",
     "static/media/background.png": "/the-rent/static/media/background.1363e352b753534a5c02.png",
     "static/media/promo-cott.jpg": "/the-rent/static/media/promo-cott.c14078e85603faa7029c.jpg",
@@ -51,10 +51,10 @@
     "static/media/arrow.svg": "/the-rent/static/media/arrow.bb2fc631fd70dd244802.svg",
     "static/media/point.svg": "/the-rent/static/media/point.316afd05eb0b32cc8d35cc7efa66bc74.svg",
     "main.b009c885.css.map": "/the-rent/static/css/main.b009c885.css.map",
-    "main.82c12a7a.js.map": "/the-rent/static/js/main.82c12a7a.js.map"
+    "main.1bb05895.js.map": "/the-rent/static/js/main.1bb05895.js.map"
   },
   "entrypoints": [
     "static/css/main.b009c885.css",
-    "static/js/main.82c12a7a.js"
+    "static/js/main.1bb05895.js"
   ]
 }
